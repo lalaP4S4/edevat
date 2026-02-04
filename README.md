@@ -2,11 +2,23 @@
 
 Bu repository, sistem yöneticileri için Trend Micro Apex One/Central kurulum ve diagnostic araçları ile Linux güç yönetimi (TLP) scriptlerini içerir.
 
+> [!IMPORTANT]
+> **ŞUBAT 2026 GÜNCELLEMESİ**: Proje çapında "Major" bir dönüşüm yapılmıştır. Eski `A1*` serisi scriptler deprecated (kullanım dışı) bırakılmış, yerini çok daha gelişmiş, dökümante edilmiş ve interaktif `TM*` serisine bırakmıştır.
+
 ## 📂 Proje Yapısı
 
-- **[src/vendors/trendmicro/](src/vendors/trendmicro/)**: Trend Micro Apex One & Central için birleştirilmiş (superset) kurulum ve diagnostic araçları.
+- **[src/vendors/trendmicro/](src/vendors/trendmicro/)**:
+  - **TM Series (Aktif)**: Mebadi-i Aşere prensipleriyle kuşatılmış, "dad-u-bab" estetiğine sahip (Zümrüt/Altın/Elmas) yeni nesil araçlar.
+  - **A1 Series (Deprecated)**: Eski sürüm scriptler ve geçiş dökümanları.
 - **[src/tools/power/](src/tools/power/)**: Linux (Laptop) güç yönetimi, TLP profilleri ve batarya sağlığı takip araçları.
 - **[TEST_STATUS.md](TEST_STATUS.md)**: Tüm bileşenlerin test edilme durumlarını ve bilinen sorunları takip eden merkezi rapor.
+
+## 💎 dad-u-bab Estetiği ve Mebadi-i Aşere
+
+Yeni `TM*` serisi scriptler, sadece teknik bir araç değil, aynı zamanda manevi ve mesleki birer nişanedir:
+
+- **Renk Paleti**: Zümrüt (Yeşil), Altın (Sarı) ve Elmas (Beyaz) renkleriyle konsol çıktıları harmonize edilmiştir.
+- **Prensip**: Tüm scriptler, iş ahlakı ve profesyonelliği temsil eden 10 temel ilke (**Mebadi-i Aşere**) ile başlar.
 
 ## 🧪 Test Durumu
 
@@ -14,9 +26,7 @@ Tüm araçların güncel test durumlarına [TEST_STATUS.md](TEST_STATUS.md) dosy
 
 ## ⚖️ Yasal Uyarı (Disclaimer)
 
-ÖNEMLİ: Bu repository'de paylaşılan kodlar ve araçlar henüz "Production" ortamlarında tam kapsamlı test edilmemiştir. Bu araçların kullanımı sonucunda oluşabilecek veri kaybı, sistem kararsızlığı veya diğer olumsuz durumlardan geliştirici (**dad-u-bab**) sorumlu tutulamaz.
-
-**Kullanıcı, bu araçları çalıştırırken TÜM SORUMLULUĞU kabul etmiş sayılır.** Kritik sistemlerde çalıştırmadan önce mutlaka yedek almanız ve izole bir ortamda test etmeniz önerilir.
+ÖNEMLİ: Bu araçların kullanımı sonucunda oluşabilecek veri kaybı veya sistem kararsızlığından geliştirici (**dad-u-bab**) sorumlu tutulamaz. **Kullanıcı, bu araçları çalıştırırken TÜM SORUMLULUĞU kabul etmiş sayılır.**
 
 ---
 > "Sübhaneke la ilmelena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)"

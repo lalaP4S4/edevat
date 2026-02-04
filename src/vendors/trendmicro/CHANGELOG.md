@@ -2,6 +2,72 @@
 
 Bu dosya, `Apex Kurulum` dizinindeki dağınık ve versiyonlanmış scriptlerin `src/vendors/trendmicro` altında nasıl birleştirildiğini ve iyileştirildiğini belgeler.
 
+## [2.0.0] - 2026-02-04
+
+### 🎯 Major Update: TM Serisi Aktif - A1 Serisi Deprecated
+
+**Özet:**
+Proje scriptleri kapsamlı test ve iyileştirmelerden geçirilerek yeni `TM*` isimlendirme konvansiyonuna geçirildi.
+Tüm kullanıcıların yeni TM serisi scriptlere geçmeleri önerilir.
+
+#### Aktif Script Güncellemeleri
+
+- **[TMMain.ps1](TMMain.ps1)**: `main.ps1` yerine kullanılacak merkezi yönetim paneli
+  - Gelişmiş banner ve tema (cevherhane renk paleti)
+  - Dinamik execution policy bypass
+  - İyileştirilmiş menü yapısı
+  
+- **[TMReqCheck.ps1](TMReqCheck.ps1)**: `A1PreReqCheck.ps1`'den evrilmiş kapsamlı diagnostic tool
+  - 16+ interaktif modül
+  - AutoFix modu desteği
+  - IISCrypto entegrasyonu
+  - Detaylı raporlama
+  
+- **[TMConfigCheck.ps1](TMConfigCheck.ps1)**: `A1ConfigUpdater.ps1`'den yeniden adlandırıldı
+  - Aynı fonksiyonellik, yeni isim
+  
+- **[TMCertCheck.ps1](TMCertCheck.ps1)**: `A1Tools.ps1`'den yeniden adlandırıldı
+  - Aynı fonksiyonellik, yeni isim
+  
+- **[TMDloadCheck.ps1](TMDloadCheck.ps1)**: `TMDownloadcenter.ps1`'in yerine geçti
+  - XPath-free implementasyon (tablo indeks bazlı)
+  - HtmlAgilityPack kullanımı
+  - Arka plan download desteği
+  - Cevherhane tema entegrasyonu
+
+#### Kullanımdan Kaldırılan Scriptler
+
+- ❌ **main.ps1** → Retired, `TMMain.ps1` kullanın
+- ❌ **TMDownloadcenter.ps1** → Retired, `TMDloadCheck.ps1` kullanın
+
+#### Deprecated Scriptler (Bakım Modu)
+
+- ⚠️ **A1PreReqCheck.ps1** → `TMReqCheck.ps1` kullanın
+- ⚠️ **A1ConfigUpdater.ps1** → `TMConfigCheck.ps1` kullanın
+- ⚠️ **A1Tools.ps1** → `TMCertCheck.ps1` kullanın
+
+#### Dokümantasyon İyileştirmeleri
+
+- Her TM script için detaylı `.md` dokümantasyonu eklendi
+- Mermaid flowchart/pipeline diyagramları eklendi
+- Fonksiyon ve değişken referans tabloları oluşturuldu
+- Sistem modifikasyonları detaylı dokümante edildi
+
+#### Görsel & Manevi Güncellemeler
+
+- **Mebadi-i Aşere Entegrasyonu**: Tüm aktif scriptlerin başlangıcına "On İlke" banner'ı eklendi.
+- **Tema Uyumluluğu**: Tüm bannerlar cevherhane renk paleti (Altın, Zümrüt, Elmas) ile harmonize edildi.
+- **Sürüm Güncellemeleri**: Banner entegrasyonu ile tüm scriptler v1.1.0+ seviyesine yükseltildi.
+
+### Teknik Standartlar (Devam Ediyor)
+
+- **Encoding:** UTF-8 (BOM)
+- **Hata Yönetimi:** Try-catch blokları
+- **Tema:** Cevherhane renk paleti (Zümrüt, Elmas, Altın, Yakut)
+- **Versiyon:** Bab-ı Kod standartları (mahlas: dad-u-bab)
+
+---
+
 ## [1.0.1] - 2026-01-28
 
 ### İyileştirmeler & Refactor

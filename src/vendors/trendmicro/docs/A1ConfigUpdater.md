@@ -1,5 +1,9 @@
 # A1ConfigUpdater.ps1 Kullanım Kılavuzu
 
+> [!WARNING]
+> **BU SCRIPT DEPRECATED (ESKİ SÜRÜM) OLARAK İŞARETLENMİŞTİR.**
+> Yeni projelerde ve güncel işlemler için lütfen **[TMConfigCheck.ps1](TMConfigCheck.md)** kullanın.
+
 `A1ConfigUpdater.ps1`, Trend Micro `.ini` yapılandırma dosyalarını güvenli, yedekli ve kontrollü bir şekilde güncellemek için tasarlanmış bir araçtır.
 
 ## 📋 Genel Bakış

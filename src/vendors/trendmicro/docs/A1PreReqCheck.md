@@ -1,5 +1,9 @@
 # A1PreReqCheck.ps1 Kullanım Kılavuzu
 
+> [!WARNING]
+> **BU SCRIPT DEPRECATED (ESKİ SÜRÜM) OLARAK İŞARETLENMİŞTİR.**
+> Yeni projelerde ve güncel işlemler için lütfen **[TMReqCheck.ps1](TMReqCheck.md)** kullanın.
+
 `A1PreReqCheck.ps1`, Trend Micro Apex One ve Central kurulumları için hepsi bir arada (all-in-one) bir diagnostic ve ön hazırlık aracıdır.
 
 ## 📋 Genel Bakış
