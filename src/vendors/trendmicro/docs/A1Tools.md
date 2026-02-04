@@ -1,5 +1,9 @@
 # A1Tools.ps1 Kullanım Kılavuzu
 
+> [!WARNING]
+> **BU SCRIPT DEPRECATED (ESKİ SÜRÜM) OLARAK İŞARETLENMİŞTİR.**
+> Yeni projelerde ve güncel işlemler için lütfen **[TMCertCheck.ps1](TMCertCheck.md)** kullanın.
+
 `A1Tools.ps1`, Trend Micro Apex One ve Central için sık kullanılan yardımcı fonksiyonları tek bir kütüphanede toplar.
 
 ## 📋 Genel Bakış
