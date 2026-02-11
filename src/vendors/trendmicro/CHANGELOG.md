@@ -2,6 +2,14 @@
 
 Bu dosya, `Apex Kurulum` dizinindeki dağınık ve versiyonlanmış scriptlerin `src/vendors/trendmicro` altında nasıl birleştirildiğini ve iyileştirildiğini belgeler.
 
+## [2.2.0] - 2026-02-11
+
+### Eklendi
+
+- `TMDloadv2.ps1`: Apex One, Apex Central ve Deep Security Manager (LTS) indirme araçları tek bir gelişmiş arayüzde birleştirildi.
+- Ortak asenkron (arka plan) indirme, durum takibi ve geçmiş kaydı (history) sistemleri tüm ürünler için harmonize edildi.
+- Deep Security XML parsing mantığı Apex araçları ile aynı çatı altında toplandı.
+
 ## [2.1.0] - 2026-02-11
 
 ### 💎 Banner Standardization & Script Consolidation
@@ -122,7 +130,9 @@ Tüm kullanıcıların yeni TM serisi scriptlere geçmeleri önerilir.
 - **v2 Baz Alındı:** Modern diagnostic yapısı, CPU/RAM/OS/Disk/Network kontrolleri v2 üzerinden taşındı.
 - **Modül Kontrolleri Eklendi:** v1'de bulunan Application Control, Endpoint Sensor, Vulnerability Protection ve MDR servis kontrolleri entegre edildi.
 - **Merkezi Menü:** Tüm kontrolleri içeren interaktif bir konsol menüsü oluşturuldu.
-- **Gelişmiş Raporlama:** Tüm çıktıları UTF-8 formatında TXT dosyasına döken merkezi raporlama fonksiyonu eklendi.
+- **[TMDloadv2.ps1](src/vendors/trendmicro/TMDloadv2.ps1)**: Apex One, Apex Central ve Deep Security Manager için merkezi indirme paneli.
+- **[TEST_STATUS.md](TEST_STATUS.md)**: Tüm bileşenlerin test edilme durumlarını ve bilinen sorunları takip eden merkezi rapor.
+lama fonksiyonu eklendi.
 
 #### 2. [A1ConfigUpdater.ps1](A1ConfigUpdater.ps1)
 
