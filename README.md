@@ -29,4 +29,4 @@ Tüm araçların güncel test durumlarına [TEST_STATUS.md](TEST_STATUS.md) dosy
 ÖNEMLİ: Bu araçların kullanımı sonucunda oluşabilecek veri kaybı veya sistem kararsızlığından geliştirici (**dad-u-bab**) sorumlu tutulamaz. **Kullanıcı, bu araçları çalıştırırken TÜM SORUMLULUĞU kabul etmiş sayılır.**
 
 ---
-> "Sübhaneke la ilmelena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)"
+> "Sübhaneke la ilme lena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)"
