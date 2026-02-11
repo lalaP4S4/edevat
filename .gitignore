@@ -1,2 +1,5 @@
 other-tools/
 .agent/
+src/vendors/trendmicro/Trend_Micro_Install-SMUninstall.bat
+src/vendors/trendmicro/TMConfigCheckv2.ps1
+src/vendors/trendmicro/TMConfigCheckv3.ps1
