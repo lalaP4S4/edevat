@@ -111,4 +111,4 @@ Her scriptin detaylı parametreleri, kullanım örnekleri, flowchart'ları ve ha
 Bu projede yer alan betikler ve araçlar henüz "Production" ortamında tam teşekküllü test edilmemiştir. Kullanım sırasında oluşabilecek veri kaybı, sistem kesintisi veya yapılandırma hatalarından geliştirici sorumlu tutulamaz. Her türlü işlem öncesi yedek almanız şiddetle önerilir.
 
 ---
-> "Sübhaneke la ilmelena illa ma allemtena inneke entel alimul hakîm. ()" | **dad-u-bab**
+> "Sübhaneke la ilme lena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)" | **dad-u-bab (v2.1.0)**

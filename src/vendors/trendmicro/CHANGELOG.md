@@ -2,6 +2,32 @@
 
 Bu dosya, `Apex Kurulum` dizinindeki dağınık ve versiyonlanmış scriptlerin `src/vendors/trendmicro` altında nasıl birleştirildiğini ve iyileştirildiğini belgeler.
 
+## [2.1.0] - 2026-02-11
+
+### 💎 Banner Standardization & Script Consolidation
+
+**Özet:**
+Proje genelinde görsel standartlar güncellendi ve `TMConfigCheck` sürümü en kapsamlı haliyle tek bir dosyada birleştirildi.
+
+#### 🎨 Görsel Standartlar (Mebadi-i Aşere v2)
+
+- **Banner Güncellemesi:** Tüm PowerShell betiklerindeki `Show-MebadiBanner` fonksiyonu yeni renk paleti (DarkYellow, White/DarkGreen) ve hizalamaya göre standardize edildi.
+- **Renk Uyumu:** Banner satırları artık daha okunaklı ve tutarlı bir `Green` (Zümrüt) tonu kullanıyor.
+- **Besmele Düzeni:** Besmele-i Şerif görsel olarak merkezlendi ve kontrastı artırıldı.
+
+#### ⚙️ TMConfigCheck Consolidation (v3.1.0)
+
+- **Superset Birleştirme:** `v2` ve `v3` sürümlerindeki tüm özellikler ana `TMConfigCheck.ps1` dosyasında birleştirildi.
+- **Yeni Özellikler:** Inactive Agent Purge bildirimleri ve Global Güvenlik/Optimizasyon ayarları (Option 4) artık tek bir dosyada mevcut.
+- **Temizlik:** Gereksiz hale gelen versiyonlanmış (`v2`, `v3`) yedek dosyalar temizlendi.
+
+#### 🛠 Teknik İyileştirmeler
+
+- **Hata Giderme:** Ayet referanslarındaki (Necm;39 vb.) boşluk ve gösterim hataları düzeltildi.
+- **Merkezi Yönetim:** `TMMain.ps1` üzerindeki tüm linkler konsolide edilmiş dosyalara yönlendirildi.
+
+---
+
 ## [2.0.0] - 2026-02-04
 
 ### 🎯 Major Update: TM Serisi Aktif - A1 Serisi Deprecated

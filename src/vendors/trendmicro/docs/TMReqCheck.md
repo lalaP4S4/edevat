@@ -6,6 +6,10 @@
 
 Bu script, sistem gereksinimlerini kontrol etmenin ötesinde, kritik registry ayarlarını optimize eder, eksik Windows rollerini kurar ve güvenlik best-practice'lerini (IISCrypto) uygular.
 
+### 🎨 Görsel Standartlar (Mebadi-i Aşere v2)
+
+Araç, standardize edilmiş Mebadi-i Aşere v2 banner yapısını kullanır. Raporlama ve interaktif menüler bu görsel standartlara uygun olarak Cevherhane renk paletiyle sunulur.
+
 ## 🛠 Kullanım
 
 Script **Administrator** yetkisi gerektirir.
