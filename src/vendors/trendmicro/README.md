@@ -17,7 +17,7 @@ Bu dizin, Trend Micro Apex One ve Apex Central kurulum hazırlığı, yapıland�
 - **[TMReqCheck.ps1](TMReqCheck.ps1)**: 🔍 Kapsamlı diagnostic ve ön hazırlık aracı (pre & post-install)
 - **[TMConfigCheck.ps1](TMConfigCheck.ps1)**: ⚙️ Güvenli INI (ofcscan/ofcserver) yapılandırma güncelleyici
 - **[TMCertCheck.ps1](TMCertCheck.ps1)**: 🔐 Yardımcı araçlar kütüphanesi (SQL/Versiyon/Sertifika/Log)
-- **[TMDloadCheck.ps1](TMDloadCheck.ps1)**: 📥 Download Center takip ve indirme aracı (XPath-free)
+- **[TMDloadCheck.ps1](TMDloadCheck.ps1)**: 📥 Deep Discovery & Apex Download Manager (v2.2.1)
 
 ### 🗃️ Eski Scriptler (A1 Serisi - Deprecated)
 
@@ -113,4 +113,4 @@ Her scriptin detaylı parametreleri, kullanım örnekleri, flowchart'ları ve ha
 Bu projede yer alan betikler ve araçlar henüz "Production" ortamında tam teşekküllü test edilmemiştir. Kullanım sırasında oluşabilecek veri kaybı, sistem kesintisi veya yapılandırma hatalarından geliştirici sorumlu tutulamaz. Her türlü işlem öncesi yedek almanız şiddetle önerilir.
 
 ---
-> "Sübhaneke la ilme lena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)" | **bab-ı kod (v2.1.0)**
+> "Sübhaneke la ilme lena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)" | **bab-ı kod (v2.2.1)**

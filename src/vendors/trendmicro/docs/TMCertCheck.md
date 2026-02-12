@@ -73,4 +73,5 @@ graph LR
 
 ## 🔐 Sistem Modifikasyonları
 
-Bu script salt-okunur (read-only) modda çalışır; sistem ayarlarını **değiştirmez**. Sadece `C:\A1\LogErr` dizini yoksa oluşturur ve rapor dosyalarını buraya yazar.
+- **Execution Policy**: Script başında kaydedilen orijinal politika, `finally` bloğu ile her koşulda geri yüklenir.
+- **Salt-Okunur İşlemler**: Bu script salt-okunur (read-only) modda çalışır; sistem ayarlarını **değiştirmez**. Sadece `C:\A1\LogErr` dizini yoksa oluşturur ve rapor dosyalarını buraya yazar.

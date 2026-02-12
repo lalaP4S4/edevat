@@ -2,6 +2,28 @@
 
 Bu dosya, `Apex Kurulum` dizinindeki dağınık ve versiyonlanmış scriptlerin `src/vendors/trendmicro` altında nasıl birleştirildiğini ve iyileştirildiğini belgeler.
 
+## [2.2.1] - 2026-02-12
+
+### 🚀 Deep Discovery Expansion & Execution Policy Management
+
+**Özet:**
+`TMDloadCheck.ps1` tam bir Deep Discovery indirme aracına dönüştürüldü ve tüm scriptlere güvenli Execution Policy yönetimi eklendi.
+
+#### 📥 Deep Discovery Ailesi (v2.2.1)
+
+- **DDD, DDI, DDEI Desteği:** Deep Discovery Director, Inspector ve Email Inspector ürünleri indirme menüsüne eklendi.
+- **Software Upgrade Path:** DD ürünleri için resmi sürüm yükseltme KB bağlantıları (`KA-` referansları) script içerisine entegre edildi ve seçim yapıldığında kullanıcıya sunulur hale getirildi.
+
+#### 🛡️ Execution Policy Restoration
+
+- **Güvenli Bypass:** Tüm `.ps1` dosyalarına script başladığında politikayı `Bypass` yapan ve sonlandığında (hata dahil) orijinal değerine döndüren `try...finally` mekanizması eklendi.
+- **Hata Giderme:** `TMConfigCheck.ps1` üzerindeki sözdizimi hataları giderildi ve parameter blokları stabilize edildi.
+
+#### 🎨 Renk Refaktörü
+
+- **Standardizasyon:** `$COLOR_GRI` değişkeni `$COLOR_GUMUS` olarak yeniden adlandırıldı.
+- **Ton Ayarı:** `DarkCyan` (Zümrüt) rengi, "bab-ı kod" standartlarına uyum için `DarkGreen` olarak güncellendi.
+
 ## [2.2.0] - 2026-02-11
 
 ### Eklendi
