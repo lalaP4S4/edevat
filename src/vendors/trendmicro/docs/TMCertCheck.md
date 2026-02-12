@@ -8,7 +8,7 @@ Bu araç, SQL bağlantı bilgilerinden ajan versiyon sorgulamaya, sertifika doğ
 
 ### 🎨 Görsel Standartlar (Mebadi-i Aşere v2)
 
-Bu kütüphanedeki tüm fonksiyonlar, Mebadi-i Aşere v2 standartlarına uygun olarak tasarlanmış merkezi yönetim paneliyle (TMMain) tam uyumludur.
+Bu kütüphanedeki tüm fonksiyonlar, Mebadi-i Aşere v2 standartlarına uygun olarak tasarlanmış merkezi yönetim paneliyle (TMMain) tam uyumludur. İşlem sonlarında standart cevherhane alt bilgisi (footer) görüntülenir.
 
 ## 🛠 Kullanım
 
@@ -43,7 +43,7 @@ graph LR
     LOG --> FS[File System Parse]
 ```
 
-## ⚙️ Fonksiyonlar ve Özellikler
+## ⚙️ Fonksiyonlar ve Özellikler (v1.1.0)
 
 | Fonksiyon | Açıklama | Kaynak / Hedef |
 | :--- | :--- | :--- |
@@ -73,5 +73,7 @@ graph LR
 
 ## 🔐 Sistem Modifikasyonları
 
-- **Execution Policy**: Script başında kaydedilen orijinal politika, `finally` bloğu ile her koşulda geri yüklenir.
 - **Salt-Okunur İşlemler**: Bu script salt-okunur (read-only) modda çalışır; sistem ayarlarını **değiştirmez**. Sadece `C:\A1\LogErr` dizini yoksa oluşturur ve rapor dosyalarını buraya yazar.
+- **Execution Policy**: Sistem politikasını kalıcı olarak değiştirmez.
+
+> "Sübhaneke la ilmelena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)"

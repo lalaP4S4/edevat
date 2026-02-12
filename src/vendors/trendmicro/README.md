@@ -1,7 +1,7 @@
 # Trend Micro Apex Installation & Diagnostic Tools
 
 > [!IMPORTANT]
-> **Script Durumu Güncellemesi (2026-02-04)**
+> **Script Durumu Güncellemesi (2026-02-12)**
 >
 > - ✅ **Aktif (Current)**: `TM*.ps1` scriptleri test edilmiş ve aktif kullanımdadır
 > - ⚠️ **Kullanımdan Kaldırıldı (Retired)**: `TMDownloadcenter.ps1`, `main.ps1`
@@ -13,11 +13,11 @@ Bu dizin, Trend Micro Apex One ve Apex Central kurulum hazırlığı, yapıland�
 
 ### ✅ Aktif Scriptler (TM Serisi)
 
-- **[TMMain.ps1](TMMain.ps1)**: 🎯 Merkezi yönetim paneli - tüm araçları tek bir menüden başlatın
-- **[TMReqCheck.ps1](TMReqCheck.ps1)**: 🔍 Kapsamlı diagnostic ve ön hazırlık aracı (pre & post-install)
-- **[TMConfigCheck.ps1](TMConfigCheck.ps1)**: ⚙️ Güvenli INI (ofcscan/ofcserver) yapılandırma güncelleyici
-- **[TMCertCheck.ps1](TMCertCheck.ps1)**: 🔐 Yardımcı araçlar kütüphanesi (SQL/Versiyon/Sertifika/Log)
-- **[TMDloadCheck.ps1](TMDloadCheck.ps1)**: 📥 Deep Discovery & Apex Download Manager (v2.2.1)
+- **[TMMain.ps1](TMMain.ps1)**: 🎯 Merkezi yönetim paneli - tüm araçları tek bir menüden başlatın (v1.0.0)
+- **[TMReqCheck.ps1](TMReqCheck.ps1)**: 🔍 Kapsamlı diagnostic ve ön hazırlık aracı (v1.1.2)
+- **[TMConfigCheck.ps1](TMConfigCheck.ps1)**: ⚙️ Güvenli INI (ofcscan/ofcserver) yapılandırma güncelleyici (v3.1.0)
+- **[TMCertCheck.ps1](TMCertCheck.ps1)**: 🔐 Yardımcı araçlar kütüphanesi (v1.1.0)
+- **[TMDloadCheck.ps1](TMDloadCheck.ps1)**: 📥 Deep Discovery & Apex Download Manager (v2.2.0)
 
 ### 🗃️ Eski Scriptler (A1 Serisi - Deprecated)
 
@@ -43,9 +43,16 @@ En kolay kullanım için merkezi yönetim panelini başlatın:
 .\TMMain.ps1
 ```
 
-### 2. Sistem Kontrolü (Pre-Install)
+> [!TIP]
+> **Eğer "UnauthorizedAccess" veya "not digitally signed" hatası alırsanız, şu komutla başlatın:**
+>
+> ```powershell
+> powershell.exe -ExecutionPolicy Bypass -File .\TMMain.ps1
+> ```
 
-Kuruluma başlamadan önce tüm sistem gereksinimlerini kontrol edin:
+### 2. Sistem Kontrolü (Diagnostic)
+
+Kuruluma başlamadan önce veya sonra tüm sistem gereksinimlerini kontrol edin:
 
 ```powershell
 .\TMReqCheck.ps1
@@ -73,7 +80,7 @@ SQL bilgilerini çekmek veya sertifikaları kontrol etmek için:
 
 ### 5. Download Center Kontrolü
 
-En güncel Apex paketlerini sorgulamak ve indirmek için:
+En güncel Apex ve Deep Discovery paketlerini sorgulamak ve indirmek için:
 
 ```powershell
 .\TMDloadCheck.ps1
@@ -86,7 +93,7 @@ En güncel Apex paketlerini sorgulamak ve indirmek için:
 - **Yetki**: Scriptlerin çoğu **Administrator** yetkisi gerektirir
 - **Bağımlılıklar**:
   - `TMDloadCheck.ps1` için: HtmlAgilityPack (otomatik indirilir)
-  - `TMReqCheck.ps1` için: IISCryptoCli (otomatik indirilir, isteğe bağlı)
+  - `TMReqCheck.ps1` için: IISCryptoCli (istendiğinde indirilir)
 
 ## 📖 Detaylı Dokümantasyon
 
@@ -102,15 +109,9 @@ Her scriptin detaylı parametreleri, kullanım örnekleri, flowchart'ları ve ha
 4. [TMCertCheck.ps1 Detayları](docs/TMCertCheck.md) - Utility araçlar kütüphanesi
 5. [TMDloadCheck.ps1 Detayları](docs/TMDloadCheck.md) - Download Center aracı
 
-### Deprecated Scriptler
-
-- [A1PreReqCheck Detayları](docs/A1PreReqCheck.md) ⚠️
-- [A1ConfigUpdater Detayları](docs/A1ConfigUpdater.md) ⚠️
-- [A1Tools Detayları](docs/A1Tools.md) ⚠️
-
 ## ⚖️ Yasal Uyarı (Disclaimer)
 
 Bu projede yer alan betikler ve araçlar henüz "Production" ortamında tam teşekküllü test edilmemiştir. Kullanım sırasında oluşabilecek veri kaybı, sistem kesintisi veya yapılandırma hatalarından geliştirici sorumlu tutulamaz. Her türlü işlem öncesi yedek almanız şiddetle önerilir.
 
 ---
-> "Sübhaneke la ilme lena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)" | **bab-ı kod (v2.2.1)**
+> "Sübhaneke la ilmelena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)" | **bab-ı kod (v2.3.0)**
