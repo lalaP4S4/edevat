@@ -89,7 +89,9 @@ Bu script sistem üzerinde şu değişiklikleri yapabilir:
     - `HKLM\SYSTEM\CCSet\Services\Tcpip6\Parameters` -> `DisabledComponents` = 0x20
 2. **Windows Roles**: `Web-Server`, `Web-ASP`, `MSMQ` vb. eksikse kurar.
 3. **Regional**: Display language `en-US`, Klavye `Turkish-Q`, Location `US` ayarlar.
-4. **Güvenlik**: `IISCryptoCli.exe` kullanarak sistem protokollerini (TLS 1.2+ zorlama) optimize eder.
+4. **Güvenlik & Policy**:
+    - `IISCryptoCli.exe` kullanarak sistem protokollerini (TLS 1.2+ zorlama) optimize eder.
+    - Script başında kaydedilen orijinal Execution Policy, `finally` bloğu ile her koşulda geri yüklenir.
 
 ## 📝 Raporlama
 

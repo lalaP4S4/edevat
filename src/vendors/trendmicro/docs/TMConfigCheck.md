@@ -78,7 +78,8 @@ graph TD
 
 1. **Güvenli Yedekleme**: Her güncelleme öncesi `dosya.ini-YYYYMMDD_HHmm.bak` adında bir kopya oluşturulur.
 2. **Format Koruması**: Ardışık boş satırları temizler ve dosyanın UTF-8 (BOM) yapısını korur.
-3. **Hata Yönetimi**: Beklenmedik durumlarda `try/catch` blokları ile işlemi güvenli bir şekilde sonlandırır.
+3. **Execution Policy**: Script başında kaydedilen orijinal politika, `finally` bloğu ile her koşulda geri yüklenir.
+4. **Hata Yönetimi**: Beklenmedik durumlarda `try/catch` blokları ile işlemi güvenli bir şekilde sonlandırır.
 
 ## 💡 Önemli Not
 

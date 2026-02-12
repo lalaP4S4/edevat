@@ -71,4 +71,5 @@ Script, seçtiğiniz aracı yeni bir PowerShell penceresinde (`Start-Process`) �
 
 ## 🔐 Sistem Modifikasyonları
 
-`TMMain.ps1` bir launcher (başlatıcı) olduğu için sistem üzerinde doğrudan bir değişiklik **yapmaz**. Yalnızca diğer scriptleri tetikler.
+- **Execution Policy Management**: Script otomatik olarak `Bypass` modunda başlar ve sonlandığında orijinal sistem politikasını geri yükler.
+- **Launcher Mantığı**: `TMMain.ps1` bir launcher (başlatıcı) olduğu için sistem üzerinde doğrudan bir değişiklik **yapmaz**. Yalnızca diğer scriptleri tetikler.

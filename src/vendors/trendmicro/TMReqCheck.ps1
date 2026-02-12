@@ -1299,6 +1299,9 @@ catch {
     Write-Host $_.ScriptStackTrace -ForegroundColor Gray
 }
 finally {
-    # Temizlik işlemleri
-    Write-Host "`n--- Script sonlandırıldı ---" -ForegroundColor Cyan
+    # Temizlik işlemleri: Orijinal Policy'ye geri dön
+    if ($null -ne $currentPolicy) {
+        Set-ExecutionPolicy -Scope Process -ExecutionPolicy $currentPolicy -Force
+    }
+    Write-Host "`n--- Script sonlandırıldı ve Execution Policy geri yüklendi ---" -ForegroundColor Cyan
 }

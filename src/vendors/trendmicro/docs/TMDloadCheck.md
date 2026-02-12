@@ -1,6 +1,6 @@
 # TMDloadCheck.ps1 Kullanım Kılavuzu
 
-`TMDloadCheck.ps1`, Trend Micro Download Center üzerinden en güncel Apex One ve Central paketlerini takip eden, SHA256 doğrulaması yapan ve asenkron (arka plan) indirme desteği sunan gelişmiş bir araçtır.
+`TMDloadCheck.ps1`, Trend Micro Download Center üzerinden en güncel Apex (One/Central) ve Deep Discovery (Analyzer/Director/Inspector/Email Inspector) paketlerini takip eden, SHA256 doğrulaması yapan ve asenkron (arka plan) indirme desteği sunan gelişmiş bir araçtır.
 
 ## 📋 Genel Bakış
 
@@ -24,7 +24,7 @@ graph TD
     Deps -- Yoksa --> NuGet[NuGet'ten İndir & Cache'le]
     Deps -- Varsa --> Main[Ana Menü]
     
-    Main --> Query[Ürün Sorgula: Apex One/Central]
+    Main --> Query[Ürün Sorgula: Apex / Deep Discovery]
     Query --> Scrape[Web Scraping & Parse]
     Scrape --> Display[Gövde Sürüm & Hotfix Bilgileri]
     
@@ -50,7 +50,7 @@ graph TD
 
 ### Global Yapılandırma
 
-- `$products`: Ürün ID'lerini (1745: Apex One, 1746: Apex Central) içeren mapping tablosu.
+- `$global:ScrapingProducts`: Ürün ID'lerini (Apex One, Central, DDAN, DDD, DDI, DDEI) ve Upgrade Path KB bağlantılarını içeren mapping tablosu.
 - `$global:ActiveDownloads`: Aktif indirme işlerini takip eden liste.
 
 ## 📥 İndirme Özellikleri
@@ -59,6 +59,7 @@ graph TD
 2. **Dosya Çatışma Yönetimi**: Aynı isimde dosya varsa üzerine yazma onayı sorar veya zaman damgalı yeni isim verir.
 3. **Kesintisiz UI**: İndirme işlemi arka planda sürerken ana menüde gezinmeye devam edebilirsiniz.
 4. **SHA256**: Web sitesinde yayınlanan hash değeri çekilerek indirme sonrası manuel doğrulama için hazır tutulur.
+5. **Software Upgrade Path**: Deep Discovery ürünleri seçildiğinde, bakım ve yükseltme planlaması için ilgili resmi KB bağlantısı kullanıcıya sunulur.
 
 ## 🔐 Sistem Modifikasyonları ve Güvenlik
 
