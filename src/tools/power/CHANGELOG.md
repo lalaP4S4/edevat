@@ -18,7 +18,7 @@ Bu dosya, `Other-tools` dizinindeki dağınık scriptlerin `src/tools/power` alt
 **Yapılan İyileştirmeler:**
 
 - **Merkezi Menü**: Tüm fonksiyonlar tek bir script altında, interaktif menü ile toplandı.
-- **Sürüm Takibi**: v1.0.1 etiketi ve `dad-u-bab` author bilgisi eklendi.
+- **Sürüm Takibi**: v1.0.1 etiketi ve `bab-ı kod` author bilgisi eklendi.
 - **Hata Yönetimi**: Donanım algılama ve TLP kontrolü geliştirildi.
 
 #### 2. [power-dashboard.py](power-dashboard.py)

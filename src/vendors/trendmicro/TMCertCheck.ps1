@@ -1,10 +1,10 @@
 ﻿# Sürüm: v1.1.0
-# Mahlas: dad-u-bab (2026-02-04)
+# Mahlas: bab-ı kod (2026-02-04)
 
 function Show-MebadiBanner {
     Clear-Host
     Write-Host ("=" * 85) -ForegroundColor DarkYellow
-    Write-Host (" " * 71) "  dad-u-bab  " -BackgroundColor DarkYellow -ForegroundColor Black
+    Write-Host (" " * 71) "  bab-ı kod  " -BackgroundColor DarkYellow -ForegroundColor Black
     Write-Host ("=" * 85) -ForegroundColor DarkYellow
     Write-Host (" " * 25) "Bismillahirrahmanirrahim" (" " * 34) -BackgroundColor White -ForegroundColor DarkGreen
     Write-Host ("-" * 85) -ForegroundColor DarkYellow
@@ -109,7 +109,7 @@ function Export-A1LogErrors {
 function Show-A1ToolsMenu {
     Show-MebadiBanner
     Write-Host "=== APEX ONE TOOLS & UTILS (v1.1.0) ===" -ForegroundColor Cyan
-    Write-Host "  MAHLAS : dad-u-bab" -ForegroundColor White
+    Write-Host "  MAHLAS : bab-ı kod" -ForegroundColor White
     Write-Host " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" -ForegroundColor Yellow
     Write-Host "1. SQL Bilgilerini Göster"
     Write-Host "2. Ajan Versiyonunu Sorgula"

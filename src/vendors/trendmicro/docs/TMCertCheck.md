@@ -6,6 +6,10 @@
 
 Bu araç, SQL bağlantı bilgilerinden ajan versiyon sorgulamaya, sertifika doğrulamalarından log hata analizine kadar geniş bir yelpazede diagnostic işlemlerini kolaylaştırır.
 
+### 🎨 Görsel Standartlar (Mebadi-i Aşere v2)
+
+Bu kütüphanedeki tüm fonksiyonlar, Mebadi-i Aşere v2 standartlarına uygun olarak tasarlanmış merkezi yönetim paneliyle (TMMain) tam uyumludur.
+
 ## 🛠 Kullanım
 
 ### İnteraktif Kullanım (Menü)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Linux Batarya Sağlığı Analiz Paneli (v1.0.1)
-Author: dad-u-bab
+Author: bab-ı kod
 DISCLAIMER: Bu betik henüz tam teşekküllü test edilmemiştir. Sorumluluk kullanıcıya aittir.
 DISCLAIMER: This script is not fully tested. Use at your own risk.
 """
@@ -43,4 +43,4 @@ def plot_battery_health(csv_path=None):
 if __name__ == "__main__":
     path = sys.argv[1] if len(sys.argv) > 1 else None
     plot_battery_health(path)
-    print("\n*Gayret bizden, tevfik Allah'tandır. | dad-u-bab*")
+    print("\n*Gayret bizden, tevfik Allah'tandır. | bab-ı kod*")

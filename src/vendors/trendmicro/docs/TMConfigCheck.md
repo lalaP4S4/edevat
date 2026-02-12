@@ -10,7 +10,12 @@ Bu script, kritik `.ini` dosyalarında manuel düzenleme yaparken oluşabilecek 
 
 ### İnteraktif Mod (Önerilen)
 
-Sık kullanılan ayarları (USB Logging, Purge Alert vb.) menüden seçerek uygulamak için:
+v3.1.0 ile birlikte tüm gelişmiş ayarlar (USB Logging, Purge Alert, Global Optimization vb.) tek bir menüde toplanmıştır:
+
+1. **USB Logging Etkinleştir**: Global Setting altındaki USB log takibi.
+2. **Client Unload Etkinleştir**: Sunucu konsolundan ajan kaldırma izni.
+3. **Inactive Agent Purge Bildirimleri**: Temizlenen ajanlar için zengin SMTP/Event log bildirimleri.
+4. **Global Güvenlik & Optimizasyon**: `VsapiNtkdControlFlag`, `WatchDogSPLog` gibi kritik sistem ayarları.
 
 ```powershell
 .\TMConfigCheck.ps1 -Interactive

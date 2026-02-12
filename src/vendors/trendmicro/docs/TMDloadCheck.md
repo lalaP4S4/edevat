@@ -6,6 +6,10 @@
 
 Eski XPath bağımlı yöntemlerin aksine, bu script tablo-indeks bazlı dinamik ayrıştırma (parsing) yapar. `HtmlAgilityPack` kütüphanesini kullanarak Download Center verilerini güvenilir bir şekilde çeker.
 
+### 🎨 Görsel Standartlar (Mebadi-i Aşere v2)
+
+İndirme süreçleri ve durum takibi, Mebadi-i Aşere v2 standartlarına uygun görsel geri bildirimlerle cevherhane teması üzerinden gerçekleştirilir.
+
 ## 🛠 Kullanım
 
 ```powershell

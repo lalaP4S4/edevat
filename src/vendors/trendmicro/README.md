@@ -92,6 +92,8 @@ En güncel Apex paketlerini sorgulamak ve indirmek için:
 
 Her scriptin detaylı parametreleri, kullanım örnekleri, flowchart'ları ve hata giderme adımları için `docs/` klasörüne göz atın:
 
+- **TM Series (Aktif)**: Mebadi-i Aşere prensipleriyle kuşatılmış, "bab-ı kod" estetiğine sahip (Zümrüt/Altın/Elmas) yeni nesil araçlar.
+
 ### Aktif Scriptler
 
 1. [TMMain.ps1 Detayları](docs/TMMain.md) - Merkezi yönetim paneli
@@ -111,4 +113,4 @@ Her scriptin detaylı parametreleri, kullanım örnekleri, flowchart'ları ve ha
 Bu projede yer alan betikler ve araçlar henüz "Production" ortamında tam teşekküllü test edilmemiştir. Kullanım sırasında oluşabilecek veri kaybı, sistem kesintisi veya yapılandırma hatalarından geliştirici sorumlu tutulamaz. Her türlü işlem öncesi yedek almanız şiddetle önerilir.
 
 ---
-> "Sübhaneke la ilmelena illa ma allemtena inneke entel alimul hakîm. ()" | **dad-u-bab**
+> "Sübhaneke la ilme lena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)" | **bab-ı kod (v2.1.0)**

@@ -2,6 +2,40 @@
 
 Bu dosya, `Apex Kurulum` dizinindeki dağınık ve versiyonlanmış scriptlerin `src/vendors/trendmicro` altında nasıl birleştirildiğini ve iyileştirildiğini belgeler.
 
+## [2.2.0] - 2026-02-11
+
+### Eklendi
+
+- `TMDloadv2.ps1`: Apex One, Apex Central ve Deep Security Manager (LTS) indirme araçları tek bir gelişmiş arayüzde birleştirildi.
+- Ortak asenkron (arka plan) indirme, durum takibi ve geçmiş kaydı (history) sistemleri tüm ürünler için harmonize edildi.
+- Deep Security XML parsing mantığı Apex araçları ile aynı çatı altında toplandı.
+
+## [2.1.0] - 2026-02-11
+
+### 💎 Banner Standardization & Script Consolidation
+
+**Özet:**
+Proje genelinde görsel standartlar güncellendi ve `TMConfigCheck` sürümü en kapsamlı haliyle tek bir dosyada birleştirildi.
+
+#### 🎨 Görsel Standartlar (Mebadi-i Aşere v2)
+
+- **Banner Güncellemesi:** Tüm PowerShell betiklerindeki `Show-MebadiBanner` fonksiyonu yeni renk paleti (DarkYellow, White/DarkGreen) ve hizalamaya göre standardize edildi.
+- **Renk Uyumu:** Banner satırları artık daha okunaklı ve tutarlı bir `Green` (Zümrüt) tonu kullanıyor.
+- **Besmele Düzeni:** Besmele-i Şerif görsel olarak merkezlendi ve kontrastı artırıldı.
+
+#### ⚙️ TMConfigCheck Consolidation (v3.1.0)
+
+- **Superset Birleştirme:** `v2` ve `v3` sürümlerindeki tüm özellikler ana `TMConfigCheck.ps1` dosyasında birleştirildi.
+- **Yeni Özellikler:** Inactive Agent Purge bildirimleri ve Global Güvenlik/Optimizasyon ayarları (Option 4) artık tek bir dosyada mevcut.
+- **Temizlik:** Gereksiz hale gelen versiyonlanmış (`v2`, `v3`) yedek dosyalar temizlendi.
+
+#### 🛠 Teknik İyileştirmeler
+
+- **Hata Giderme:** Ayet referanslarındaki (Necm;39 vb.) boşluk ve gösterim hataları düzeltildi.
+- **Merkezi Yönetim:** `TMMain.ps1` üzerindeki tüm linkler konsolide edilmiş dosyalara yönlendirildi.
+
+---
+
 ## [2.0.0] - 2026-02-04
 
 ### 🎯 Major Update: TM Serisi Aktif - A1 Serisi Deprecated
@@ -64,7 +98,7 @@ Tüm kullanıcıların yeni TM serisi scriptlere geçmeleri önerilir.
 - **Encoding:** UTF-8 (BOM)
 - **Hata Yönetimi:** Try-catch blokları
 - **Tema:** Cevherhane renk paleti (Zümrüt, Elmas, Altın, Yakut)
-- **Versiyon:** Bab-ı Kod standartları (mahlas: dad-u-bab)
+- **Versiyon:** Bab-ı Kod standartları (mahlas: bab-ı kod)
 
 ---
 
@@ -96,7 +130,9 @@ Tüm kullanıcıların yeni TM serisi scriptlere geçmeleri önerilir.
 - **v2 Baz Alındı:** Modern diagnostic yapısı, CPU/RAM/OS/Disk/Network kontrolleri v2 üzerinden taşındı.
 - **Modül Kontrolleri Eklendi:** v1'de bulunan Application Control, Endpoint Sensor, Vulnerability Protection ve MDR servis kontrolleri entegre edildi.
 - **Merkezi Menü:** Tüm kontrolleri içeren interaktif bir konsol menüsü oluşturuldu.
-- **Gelişmiş Raporlama:** Tüm çıktıları UTF-8 formatında TXT dosyasına döken merkezi raporlama fonksiyonu eklendi.
+- **[TMDloadv2.ps1](src/vendors/trendmicro/TMDloadv2.ps1)**: Apex One, Apex Central ve Deep Security Manager için merkezi indirme paneli.
+- **[TEST_STATUS.md](TEST_STATUS.md)**: Tüm bileşenlerin test edilme durumlarını ve bilinen sorunları takip eden merkezi rapor.
+lama fonksiyonu eklendi.
 
 #### 2. [A1ConfigUpdater.ps1](A1ConfigUpdater.ps1)
 

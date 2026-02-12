@@ -4,7 +4,15 @@
 
 ## 📋 Genel Bakış
 
-Bu script, "dad-u-bab" (cevherhane) standartlarına uygun olarak tasarlanmış olup, sistem yöneticilerine araçlar arasında hızlı geçiş yapma imkanı tanır.
+Bu script, "bab-ı kod" (cevherhane) standartlarına uygun olarak tasarlanmış olup, sistem yöneticilerine araçlar arasında hızlı geçiş yapma imkanı tanır.
+
+### 🎨 Görsel Standartlar (Mebadi-i Aşere v2)
+
+Tüm araçlar, **bab-ı kod** tarafından geliştirilen Mebadi-i Aşere v2 görsel standartlarını kullanır:
+
+- **Banner Kalıbı:** DarkYellow (Altın) çerçeve ve Green (Zümrüt) metinler.
+- **Besmele:** Merkezlenmiş ve yüksek kontrastlı Besmele-i Şerif.
+- **Renk Paleti:** Cevherhane temasını yansıtan Altın, Zümrüt ve Elmas tonları.
 
 ## 🛠 Kullanım
 
@@ -51,7 +59,7 @@ graph TD
 
 ### Fonksiyonlar
 
-- **`Show-Banner`**: Konsolu temizler ve cevherhane ASCII sanatını, sürüm bilgisini ve mahlası (dad-u-bab) görüntüler.
+- **`Show-Banner`**: Konsolu temizler ve cevherhane ASCII sanatını, sürüm bilgisini ve mahlası (bab-ı kod) görüntüler.
 
 ## 🚀 İşleyiş Detayları
 
