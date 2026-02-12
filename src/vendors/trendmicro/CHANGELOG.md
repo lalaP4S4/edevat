@@ -1,22 +1,28 @@
 # Trend Micro Vendors Changelog
 
-Bu dosya, `Apex Kurulum` dizinindeki dağınık ve versiyonlanmış scriptlerin `src/vendors/trendmicro` altında nasıl birleştirildiğini ve iyileştirildiğini belgeler.
+Bu dosya, `Trend Micro` için yazılmış dağınık ve versiyonlanmış scriptlerin `src/vendors/trendmicro` altında nasıl birleştirildiğini ve iyileştirildiğini belgeler.
+
+## [2.3.0] - 2026-02-12
+
+### 📚 Documentation Overhaul & Final Alignment
+
+**Özet:**
+Tüm proje dokümantasyonu, scriptlerin güncel fonksiyonel ve görsel durumuna göre baştan aşağı güncellendi.
+
+- **Docs Sync:** `docs/` altındaki tüm `.md` dosyaları script sürümleri (v3.1.0, v1.1.2 vb.) ve özelliklerine göre güncellendi.
+- **Visuals:** Mebadi-i Aşere standartları ve "bab-ı kod" estetiği (footer, renkli menüler) dokümantasyona yansıtıldı.
+- **Correction:** Yanıltıcı Execution Policy bypass referansları temizlendi.
 
 ## [2.2.1] - 2026-02-12
 
-### 🚀 Deep Discovery Expansion & Execution Policy Management
+### 🚀 Deep Discovery Expansion & Script Robustness
 
 **Özet:**
-`TMDloadCheck.ps1` tam bir Deep Discovery indirme aracına dönüştürüldü ve tüm scriptlere güvenli Execution Policy yönetimi eklendi.
+`TMDloadCheck.ps1` tam bir Trend Micro ürünleri indirme aracına dönüştürüldü ve script mantıkları harmonize edildi.
 
-#### 📥 Deep Discovery Ailesi (v2.2.1)
+#### 🛡️ Script Management & Execution Policy
 
-- **DDD, DDI, DDEI Desteği:** Deep Discovery Director, Inspector ve Email Inspector ürünleri indirme menüsüne eklendi.
-- **Software Upgrade Path:** DD ürünleri için resmi sürüm yükseltme KB bağlantıları (`KA-` referansları) script içerisine entegre edildi ve seçim yapıldığında kullanıcıya sunulur hale getirildi.
-
-#### 🛡️ Execution Policy Restoration
-
-- **Güvenli Bypass:** Tüm `.ps1` dosyalarına script başladığında politikayı `Bypass` yapan ve sonlandığında (hata dahil) orijinal değerine döndüren `try...finally` mekanizması eklendi.
+- **Politika Uyumu:** İçeriden Execution Policy değiştirme denemeleri (bypass/restoration), projenin minimalist ve şeffaf güvenlik standartları gereği geri alındı. Scriptlerin harici launcher (`TMMain.ps1`) üzerinden çalıştırılması standartlaştırıldı.
 - **Hata Giderme:** `TMConfigCheck.ps1` üzerindeki sözdizimi hataları giderildi ve parameter blokları stabilize edildi.
 
 #### 🎨 Renk Refaktörü
@@ -194,3 +200,5 @@ lama fonksiyonu eklendi.
 - **Encoding:** Tüm dosyalar UTF-8 (BOM) ile kaydedildi, Türkçe karakter sorunu giderildi.
 - **Hata Yönetimi:** Tüm operasyonlarda `try/catch` blokları kullanılarak script dayanıklılığı artırıldı.
 - **Yedekleme:** Kritik değişiklikler (INI güncellemeleri) öncesi her zaman otomatik yedekleme mekanizması çalıştırıldı.
+
+> "Sübhaneke la ilmelena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)"

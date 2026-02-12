@@ -18,7 +18,7 @@ Script **Administrator** yetkisi gerektirir.
 .\TMReqCheck.ps1 [-AutoFix] [-ProductType "ApexOne"|"ApexCentral"] [-ApplyIISCrypto]
 ```
 
-### Parametreler
+### Parametreler (v1.1.2)
 
 - `-AutoFix`: Tespit edilen sorunları (timezone, klavye, hostname vb.) kullanıcı onayı almadan otomatik düzeltir.
 - `-ProductType`: Hedeflenen ürünü belirtir. Belirtilmezse menüden sorulur.
@@ -91,8 +91,10 @@ Bu script sistem üzerinde şu değişiklikleri yapabilir:
 3. **Regional**: Display language `en-US`, Klavye `Turkish-Q`, Location `US` ayarlar.
 4. **Güvenlik & Policy**:
     - `IISCryptoCli.exe` kullanarak sistem protokollerini (TLS 1.2+ zorlama) optimize eder.
-    - Script başında kaydedilen orijinal Execution Policy, `finally` bloğu ile her koşulda geri yüklenir.
+    - **Execution Policy**: Bu script sistem genelindeki Execution Policy'yi kalıcı olarak **değiştirmez**. Çalıştırmak için `TMMain.ps1` veya manuel `-ExecutionPolicy Bypass` parametresi gereklidir.
 
 ## 📝 Raporlama
 
 İşlem sonunda "16. Rapor Dışa Aktar" seçeneği ile `C:\ApexSetupLogs\apex_report_YYYYMMDD.txt` dosyasında tüm sistemin röntgenini görebilirsiniz.
+
+> "Sübhaneke la ilmelena illa ma allemtena inneke entel alimul hakîm. (Bakara, 32)"
