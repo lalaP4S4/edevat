@@ -32,12 +32,12 @@ param(
 )
 
 # Version: v3.1.0
-# Author: dad-u-bab
+# Author: bab-ı kod
 
 function Show-MebadiBanner {
     Clear-Host
     Write-Host ("=" * 85) -ForegroundColor DarkYellow
-    Write-Host (" " * 71) "  dad-u-bab  " -BackgroundColor DarkYellow -ForegroundColor Black
+    Write-Host (" " * 71) "  bab-ı kod  " -BackgroundColor DarkYellow -ForegroundColor Black
     Write-Host ("=" * 85) -ForegroundColor DarkYellow
     Write-Host (" " * 25) "Bismillahirrahmanirrahim" (" " * 34) -BackgroundColor White -ForegroundColor DarkGreen
     Write-Host ("-" * 85) -ForegroundColor DarkYellow

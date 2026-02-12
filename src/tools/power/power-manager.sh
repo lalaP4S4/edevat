@@ -11,7 +11,7 @@
     Tarih: 2026-01-28
 
 .AUTHOR
-    dad-u-bab
+    bab-ı kod
 
 # DISCLAIMER: Bu betik henüz tam teşekküllü test edilmemiştir. Sorumluluk kullanıcıya aittir.
 # DISCLAIMER: This script is not fully tested. Use at your own risk.
@@ -121,4 +121,4 @@ case "$1" in
     *) Test-Requirement; Show-Menu ;;
 esac
 
-echo -e "\n*Gayret bizden, tevfik Allah'tandır. | dad-u-bab*"
+echo -e "\n*Gayret bizden, tevfik Allah'tandır. | bab-ı kod*"

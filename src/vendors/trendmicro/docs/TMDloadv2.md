@@ -9,7 +9,7 @@ Bu araç, iki farklı veri kaynağını harmonize eder:
 1. **Web Scraping**: Apex One ve Central için `HtmlAgilityPack` kullanarak Download Center'ı tarar.
 2. **XML Parsing**: Deep Security Manager (LTS) için resmi XML envanterini (`DeepSecurityInventory_en.xml`) ayrıştırır.
 
-### 💎 dad-u-bab Standartları
+### 💎 bab-ı kod Standartları
 
 - **Asenkron İndirme**: Tüm indirme işlemleri PowerShell Job'ları ile arka planda yapılır.
 - **Durum Takibi**: Aktif işler, hız ve kalan süre gibi bilgilerle takip edilebilir.

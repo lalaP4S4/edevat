@@ -1,11 +1,11 @@
 ﻿# --- bab-ı kod: Merkezi Yönetim Paneli ---
 # Version: v1.0.0 [cite: 2026-02-04]
-# Mahlas: dad-u-bab [cite: 2026-02-04]
+# Mahlas: bab-ı kod [cite: 2026-02-04]
 
 function Show-MebadiBanner {
     Clear-Host
     Write-Host ("=" * 85) -ForegroundColor DarkYellow
-    Write-Host (" " * 71) "  dad-u-bab  " -BackgroundColor DarkYellow -ForegroundColor Black
+    Write-Host (" " * 71) "  bab-ı kod  " -BackgroundColor DarkYellow -ForegroundColor Black
     Write-Host ("=" * 85) -ForegroundColor DarkYellow
     Write-Host (" " * 25) "Bismillahirrahmanirrahim" (" " * 34) -BackgroundColor White -ForegroundColor DarkGreen
     Write-Host ("-" * 85) -ForegroundColor DarkYellow
@@ -72,7 +72,7 @@ do {
         Start-Process powershell.exe -ArgumentList "-ExecutionPolicy Bypass", "-NoExit", "-File `"$scriptPath\TMCertCheck.ps1`"" -Wait
     }
     elseif ($secim -eq "q") {
-        Write-Host "`n İyi çalışmalar dad-u-bab..." -ForegroundColor "DarkGreen"
+        Write-Host "`n İyi çalışmalar bab-ı kod..." -ForegroundColor "DarkGreen"
         break
     }
     else {

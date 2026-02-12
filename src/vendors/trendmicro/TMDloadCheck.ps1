@@ -1,7 +1,7 @@
 # ---------------------------------------------------------------------------
 # Trend Micro Unified Download Tool (v2.0.0)
 # Desteklenen Ürünler: Apex One, Apex Central, Deep Security Manager (LTS)
-# Yazar: dad-u-bab
+# Yazar: bab-ı kod
 # ---------------------------------------------------------------------------
 
 # Karakter kodlamasini ve Konsol ayarlarini UTF-8 olarak duzenle
@@ -45,7 +45,7 @@ function Write-Header {
 function Show-MebadiBanner {
     Clear-Host
     Write-Host ("=" * 85) -ForegroundColor DarkYellow
-    Write-Host (" " * 71) "  dad-u-bab  " -BackgroundColor DarkYellow -ForegroundColor Black
+    Write-Host (" " * 71) "  bab-ı kod  " -BackgroundColor DarkYellow -ForegroundColor Black
     Write-Host ("=" * 85) -ForegroundColor DarkYellow
     Write-Host (" " * 25) "Bismillahirrahmanirrahim" (" " * 34) -BackgroundColor White -ForegroundColor DarkGreen
     Write-Host ("-" * 85) -ForegroundColor DarkYellow
@@ -472,4 +472,4 @@ function Start-MainMenu {
 
 # Başlat
 Start-MainMenu
-Write-Host "`n*Gayret bizden, tevfik Allah'tandir. | dad-u-bab (v2.0.0)*"
+Write-Host "`n*Gayret bizden, tevfik Allah'tandir. | bab-ı kod (v2.0.0)*"

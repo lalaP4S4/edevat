@@ -98,7 +98,7 @@ Tüm kullanıcıların yeni TM serisi scriptlere geçmeleri önerilir.
 - **Encoding:** UTF-8 (BOM)
 - **Hata Yönetimi:** Try-catch blokları
 - **Tema:** Cevherhane renk paleti (Zümrüt, Elmas, Altın, Yakut)
-- **Versiyon:** Bab-ı Kod standartları (mahlas: dad-u-bab)
+- **Versiyon:** Bab-ı Kod standartları (mahlas: bab-ı kod)
 
 ---
 
